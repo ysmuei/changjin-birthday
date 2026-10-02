@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오창진 생일 축하해! 🎉</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="card-container">
+        <div class="glass-card">
+            <h1 class="title">Happy Birthday!</h1>
+            <div class="profile-container">
+                <img src="image1.png" alt="창진이형" class="profile-img" id="profileImg">
+            </div>
+            <div class="name">우리들의 든든한 기둥, 창진 엉아! 🎂</div>
+            <div class="divider"></div>
+            <p class="message">
+                항상 동기들 먼저 챙겨주고 따뜻하게 이끌어줘서 정말 고마워요.<br>
+                엉아 덕분에 우리 모두가 항상 큰 힘을 얻고 있어요!<br>
+                올 한 해도 준비하시는 모든 일 다 대박 나길 응원할게요.<br>
+                언제나 지금처럼 멋진 모습으로 곁에 있어주세요! 꽃길만 걸어요 🌸
+            </p>
+            <button class="celebrate-btn" id="celebrateBtn">축하 파티 시작! 🎊</button>
+        </div>
+    </div>
+    
+    <!-- 롤링페이퍼 (방명록) -->
+    <div class="rolling-paper-section">
+        <h2 class="rolling-title">💌 엉아에게 축하 메시지 남기기</h2>
+        <div class="comment-form">
+            <input type="text" id="commentName" placeholder="이름 (예: 막내동기)" maxlength="10">
+            <input type="text" id="commentText" placeholder="창진 엉아 생일 축하해!! 🎉" maxlength="50">
+            <button id="submitComment">작성</button>
+        </div>
+        <div class="comments-container" id="commentsContainer">
+            <!-- 포스트잇 댓글들이 여기에 추가됩니다 -->
+        </div>
+    </div>
+    
+    <!-- Confetti Canvas -->
+    <canvas id="confetti"></canvas>
+    
+    <script type="module" src="main.js"></script>
+</body>
+</html>
